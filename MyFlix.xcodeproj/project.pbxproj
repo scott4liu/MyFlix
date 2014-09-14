@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6716F8E41EA0433C93B6BC44 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 269491ADEA1849FAAEFAEEB0 /* libPods.a */; };
+		7A523C1B19C3A78D00688B0E /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A523C1A19C3A78D00688B0E /* MovieViewCell.swift */; };
+		7A523C1D19C3B32200688B0E /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A523C1C19C3B32200688B0E /* MovieDetailsViewController.swift */; };
 		7A77159319C3903200ABB73E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A77159219C3903200ABB73E /* AppDelegate.swift */; };
 		7A77159519C3903200ABB73E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A77159419C3903200ABB73E /* ViewController.swift */; };
 		7A77159819C3903200ABB73E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A77159619C3903200ABB73E /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		269491ADEA1849FAAEFAEEB0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A523C1A19C3A78D00688B0E /* MovieViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
+		7A523C1C19C3B32200688B0E /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		7A77158D19C3903200ABB73E /* MyFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A77159119C3903200ABB73E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A77159219C3903200ABB73E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		7A7715A219C3903200ABB73E /* MyFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7715A719C3903200ABB73E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A7715A819C3903200ABB73E /* MyFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlixTests.swift; sourceTree = "<group>"; };
+		7AD1F8BC19C585D6003C3CAB /* Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1733AF4545D468CA67010DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6716F8E41EA0433C93B6BC44 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +71,8 @@
 				7A77158F19C3903200ABB73E /* MyFlix */,
 				7A7715A519C3903200ABB73E /* MyFlixTests */,
 				7A77158E19C3903200ABB73E /* Products */,
+				B1733AF4545D468CA67010DC /* Pods.xcconfig */,
+				96979B04A8474AA4ACACB8E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +90,10 @@
 			children = (
 				7A77159219C3903200ABB73E /* AppDelegate.swift */,
 				7A77159419C3903200ABB73E /* ViewController.swift */,
+				7AD1F8BC19C585D6003C3CAB /* Project-Bridging-Header.h */,
+				7A523C1C19C3B32200688B0E /* MovieDetailsViewController.swift */,
 				7A77159619C3903200ABB73E /* Main.storyboard */,
+				7A523C1A19C3A78D00688B0E /* MovieViewCell.swift */,
 				7A77159919C3903200ABB73E /* Images.xcassets */,
 				7A77159B19C3903200ABB73E /* LaunchScreen.xib */,
 				7A77159019C3903200ABB73E /* Supporting Files */,
@@ -112,6 +126,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		96979B04A8474AA4ACACB8E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				269491ADEA1849FAAEFAEEB0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A7715AC19C3903200ABB73E /* Build configuration list for PBXNativeTarget "MyFlix" */;
 			buildPhases = (
+				42507A0824E04CCBB3DF5B78 /* Check Pods Manifest.lock */,
 				7A77158919C3903200ABB73E /* Sources */,
 				7A77158A19C3903200ABB73E /* Frameworks */,
 				7A77158B19C3903200ABB73E /* Resources */,
+				6567049031B54BEA9F93BACC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +231,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42507A0824E04CCBB3DF5B78 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6567049031B54BEA9F93BACC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A77158919C3903200ABB73E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A523C1D19C3B32200688B0E /* MovieDetailsViewController.swift in Sources */,
 				7A77159519C3903200ABB73E /* ViewController.swift in Sources */,
 				7A77159319C3903200ABB73E /* AppDelegate.swift in Sources */,
+				7A523C1B19C3A78D00688B0E /* MovieViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,21 +393,27 @@
 		};
 		7A7715AD19C3903200ABB73E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1733AF4545D468CA67010DC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyFlix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "MyFlix/Project-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		7A7715AE19C3903200ABB73E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1733AF4545D468CA67010DC /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyFlix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "MyFlix/Project-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +470,7 @@
 				7A7715AE19C3903200ABB73E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A7715AF19C3903200ABB73E /* Build configuration list for PBXNativeTarget "MyFlixTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +479,7 @@
 				7A7715B119C3903200ABB73E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
