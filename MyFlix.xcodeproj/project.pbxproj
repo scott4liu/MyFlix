@@ -16,6 +16,7 @@
 		7A77159A19C3903200ABB73E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A77159919C3903200ABB73E /* Images.xcassets */; };
 		7A77159D19C3903200ABB73E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A77159B19C3903200ABB73E /* LaunchScreen.xib */; };
 		7A7715A919C3903200ABB73E /* MyFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7715A819C3903200ABB73E /* MyFlixTests.swift */; };
+		7AD1F8BE19C618D3003C3CAB /* .gitignores in Resources */ = {isa = PBXBuildFile; fileRef = 7AD1F8BD19C618D3003C3CAB /* .gitignores */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		7A7715A719C3903200ABB73E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A7715A819C3903200ABB73E /* MyFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlixTests.swift; sourceTree = "<group>"; };
 		7AD1F8BC19C585D6003C3CAB /* Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AD1F8BD19C618D3003C3CAB /* .gitignores */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignores; sourceTree = "<group>"; };
 		B1733AF4545D468CA67010DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				7A77159919C3903200ABB73E /* Images.xcassets */,
 				7A77159B19C3903200ABB73E /* LaunchScreen.xib */,
 				7A77159019C3903200ABB73E /* Supporting Files */,
+				7AD1F8BD19C618D3003C3CAB /* .gitignores */,
 			);
 			path = MyFlix;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD1F8BE19C618D3003C3CAB /* .gitignores in Resources */,
 				7A77159819C3903200ABB73E /* Main.storyboard in Resources */,
 				7A77159D19C3903200ABB73E /* LaunchScreen.xib in Resources */,
 				7A77159A19C3903200ABB73E /* Images.xcassets in Resources */,

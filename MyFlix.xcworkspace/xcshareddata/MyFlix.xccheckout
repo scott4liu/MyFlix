@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3BA41142-55A9-4D4D-A45B-2B96CEC93840</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyFlix</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EAFF5BCA82A113F3006538A7C76D5B531E7C3FA2</key>
+		<string>https://github.com/scott4liu/MyFlix.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyFlix.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EAFF5BCA82A113F3006538A7C76D5B531E7C3FA2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/scott4liu/MyFlix.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EAFF5BCA82A113F3006538A7C76D5B531E7C3FA2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EAFF5BCA82A113F3006538A7C76D5B531E7C3FA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyFlix</string>
+		</dict>
+	</array>
+</dict>
+</plist>
