@@ -1,7 +1,4 @@
-MyFlix
-
-# Rotten Tomatoes 
-
+# MyFlix - Rotten Tomatoes Top DVD Rentals
 
 This is an iphone application for displaying the top rentals using the [RottenTomatoes API](http://www.rottentomatoes.com/). See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/RottenTomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
 
@@ -22,7 +19,8 @@ Completed user stories:
  * [ ] Add a tab bar for Box Office and DVD. (optional)
  * [ ] Add a search bar. (optional)
  
- Additional Requirements
+Additional Requirements
+
  * [x] Must use Cocoapods.
  * [ ] Asynchronous image downloading must be implemented using the UIImageView category in the AFNetworking library.
  
