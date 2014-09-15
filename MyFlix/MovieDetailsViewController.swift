@@ -22,17 +22,8 @@ class MovieDetailsViewController: UIViewController {
        //println(currentMovie)
         if let movie = currentMovie {
             
-            let posters = movie["posters"] as NSDictionary
+            self.movieImageView.image = cellImage;
             
-            let imageURL = posters["original"] as NSString
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                
-                self.movieImageView.image =  UIImage(data: NSData(contentsOfURL: NSURL(string: imageURL )))
-                
-            })
-
-        
             self.title =  movie["title"] as NSString
             
             var year = " (" + String(movie["year"] as NSInteger) + ")"
@@ -62,7 +53,27 @@ class MovieDetailsViewController: UIViewController {
             self.synopsisLabel.text = movie["synopsis"] as? String
             
             self.synopsisLabel.sizeToFit()
+            
+            
+            
+            let posters = movie["posters"] as NSDictionary
+            
+            let imageURL1 = posters["original"] as NSString
+            
+            let imageURL = imageURL1.stringByReplacingOccurrencesOfString("tmb", withString: "ori")
+            
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                
+                self.movieImageView.image =  UIImage(data: NSData(contentsOfURL: NSURL(string: imageURL )))
+                
+            })
+            
+
+
         }
+
+
     }
 
     /*

@@ -21,6 +21,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.navigationController?.appearance().backgroundColor = UIColor.greenColor()
+        //self.navigationController?.toolbar.barTintColor = UIColor.greenColor()
+        
+        
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = NSAttributedString(string: "Refreshing ...")
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
@@ -36,6 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let YourApiKey = "rcb4xukpaf7u35w5qr6p2b5c"
         let RottenTomatoesURLString = "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=" + YourApiKey
         
+                
         let manager = AFHTTPRequestOperationManager()
         manager.GET(
             RottenTomatoesURLString,
@@ -57,6 +62,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             failure: { (operation: AFHTTPRequestOperation!,
                 error: NSError!) in
                 println("Error: " + error.localizedDescription)
+                
+                //var hud = MBProgressHUD(forView: self.view)
+                
+                //hud.mode = MBProgressHUDMode.MBProgressHUDModeInDeterminate;
+                //hud.labelText = "Downloading"
+                //hud.show(true)
         })
     }
     
@@ -142,6 +153,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         currentMovie = self.movieArray![indexPath.row] as? NSDictionary
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as MovieViewCell
+        cellImage = cell.movieImageView.image
         
         //let storyboard do it, so commented out following lines
         
@@ -153,6 +166,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
    
 }
+
+var cellImage : UIImage?
 
 var currentMovie : NSDictionary?
 
