@@ -40,6 +40,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let YourApiKey = "rcb4xukpaf7u35w5qr6p2b5c"
         let RottenTomatoesURLString = "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=" + YourApiKey
         
+        
+        let hud = MBProgressHUD.showHUDAddedTo(self.view, animated:true)
+        hud.labelText = "Loading ..."
+        
                 
         let manager = AFHTTPRequestOperationManager()
         manager.GET(
@@ -57,18 +61,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 //println(self.movieArray)
                 
                 self.movieTableView.reloadData()
+                
+                hud.hide(true)
+                
+                //MBProgressHUD.hideHUDForView(self.view, animated:true)
 
             },
             failure: { (operation: AFHTTPRequestOperation!,
                 error: NSError!) in
-                println("Error: " + error.localizedDescription)
                 
-                //var hud = MBProgressHUD(forView: self.view)
+                hud.labelText = "Networking Error: " + error.localizedDescription
                 
-                //hud.mode = MBProgressHUDMode.MBProgressHUDModeInDeterminate;
-                //hud.labelText = "Downloading"
-                //hud.show(true)
-        })
+            })
     }
     
     /*
