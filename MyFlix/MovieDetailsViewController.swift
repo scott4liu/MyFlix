@@ -22,7 +22,8 @@ class MovieDetailsViewController: UIViewController {
        //println(currentMovie)
         if let movie = currentMovie {
             
-            self.movieImageView.image = cellImage;
+            //self.movieImageView.image = cellImage;
+            
             
             self.title =  movie["title"] as NSString
             
@@ -63,12 +64,17 @@ class MovieDetailsViewController: UIViewController {
             let imageURL = imageURL1.stringByReplacingOccurrencesOfString("tmb", withString: "ori")
             
             
+            self.movieImageView.setImageWithURL(NSURL(string: imageURL ), placeholderImage: cellImage)
+            
+            
+            /*
+            
             dispatch_async(dispatch_get_main_queue(), {
                 
                 self.movieImageView.image =  UIImage(data: NSData(contentsOfURL: NSURL(string: imageURL )))
                 
             })
-            
+            */
 
 
         }

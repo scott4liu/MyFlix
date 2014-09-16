@@ -1,6 +1,6 @@
 # MyFlix - Rotten Tomatoes Top DVD Rentals
 
-This is an iphone application for displaying the top rentals using the [RottenTomatoes API](http://www.rottentomatoes.com/). See the [RottenTomatoes Networking Tutorial](http://guides.thecodepath.com/android/RottenTomatoes-Networking-Tutorial) on our cliffnotes for a step-by-step tutorial.
+This is an iphone application for displaying the top rentals using the [RottenTomatoes API](http://www.rottentomatoes.com/). 
 
 Time spent: 12 hours spent in total
 
@@ -22,7 +22,7 @@ Completed user stories:
 Additional Requirements
 
  * [x] Must use Cocoapods.
- * [ ] Asynchronous image downloading must be implemented using the UIImageView category in the AFNetworking library.
+ * [x] Asynchronous image downloading must be implemented using the UIImageView category in the AFNetworking library.
  
 Notes: 
 

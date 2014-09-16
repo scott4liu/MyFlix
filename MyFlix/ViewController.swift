@@ -143,13 +143,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         //println(imageURL);
         
+        /*
         
         dispatch_async(dispatch_get_main_queue(), {
             
             cell.movieImageView.image =  UIImage(data: NSData(contentsOfURL: NSURL(string: imageURL )))
             
         })
+        */
 
+        cell.movieImageView.setImageWithURL(NSURL(string: imageURL))
         
         return cell;
     }
