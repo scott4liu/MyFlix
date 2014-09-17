@@ -8,9 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITabBarDelegate
 {
+    @IBOutlet weak var DVDBarItem: UITabBarItem!
 
+    @IBOutlet weak var BoxOfficeBarITem: UITabBarItem!
+    
+    @IBOutlet weak var movieTabBar: UITabBar!
+    
     @IBOutlet weak var movieTableView: UITableView!
     
     var movieArray: NSArray?
@@ -24,6 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //self.navigationController?.appearance().backgroundColor = UIColor.greenColor()
         //self.navigationController?.toolbar.barTintColor = UIColor.greenColor()
         
+        movieTabBar.selectedItem = DVDBarItem
         
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = NSAttributedString(string: "Refreshing ...")
@@ -38,8 +44,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         
         let YourApiKey = "rcb4xukpaf7u35w5qr6p2b5c"
-        let RottenTomatoesURLString = "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=" + YourApiKey
         
+        var listType = "movies/in_theaters.json?"
+        
+        if b_showTopRentals {
+            listType = "dvds/top_rentals.json?"
+        }
+  
+        let RottenTomatoesURLString = "http://api.rottentomatoes.com/api/public/v1.0/lists/" + listType + "apikey=" + YourApiKey
         
         let hud = MBProgressHUD.showHUDAddedTo(self.view, animated:true)
         hud.labelText = "Loading ..."
@@ -170,9 +182,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     }
    
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem)
+    {
+        if item == DVDBarItem {
+            b_showTopRentals = true;
+        } else {
+            b_showTopRentals = false;
+        }
+        
+        getMoviesUsingAFNetworking();
+    }
+    
+    
     
    
 }
+
+var b_showTopRentals = true;
 
 var cellImage : UIImage?
 

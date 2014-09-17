@@ -16,7 +16,7 @@ Completed user stories:
  * [ ] All images should be cached in memory and disk. In other words, images load immediately upon cold start (optional).
  * [ ] Customize the highlight and selection effect of the cell. (optional)
  * [x] Customize the navigation bar. (optional)
- * [ ] Add a tab bar for Box Office and DVD. (optional)
+ * [x] Add a tab bar for Box Office and DVD. (optional).  Icons and Titles are not changed yet
  * [ ] Add a search bar. (optional)
  
 Additional Requirements
@@ -31,3 +31,5 @@ Notes:
 Walkthrough of all user stories:
 
 ![Video Walkthrough](anim_rotten_tomatoes.gif)
+
+GIF created with LiceCap.

@@ -74,11 +74,26 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="yAh-9i-NzL"/>
                                 </connections>
                             </tableView>
+                            <tabBar contentMode="scaleToFill" id="8Qq-yP-6R9">
+                                <rect key="frame" x="-5" y="519" width="325" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="topRated" id="RuF-sp-N9t"/>
+                                    <tabBarItem systemItem="featured" id="7Q9-mC-3j9"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ePd-RJ-u8a"/>
+                                </connections>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="gcx-aa-lr1"/>
                     <connections>
+                        <outlet property="BoxOfficeBarITem" destination="7Q9-mC-3j9" id="2ft-i9-O3f"/>
+                        <outlet property="DVDBarItem" destination="RuF-sp-N9t" id="A9d-sC-mSZ"/>
+                        <outlet property="movieTabBar" destination="8Qq-yP-6R9" id="9ph-Qf-4Hz"/>
                         <outlet property="movieTableView" destination="Mc4-KN-34f" id="iWf-4M-gSh"/>
                     </connections>
                 </viewController>
